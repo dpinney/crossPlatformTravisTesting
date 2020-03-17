@@ -11,4 +11,4 @@ if platform.system()=="Darwin": # MacOS
 	os.system("wget https://www.qsl.net/kd2bd/splat-1.4.2-osx.tgz")
 	os.system("sudo tar -xvzf splat-1.4.2-osx.tgz")
 	os.system('''sed -i '' 's/ans=""/ans="2"/g' splat-1.4.2/configure''')
-	os.system("spawn sudo bash splat-1.4.2/configure")
+	os.system("sudo bash splat-1.4.2/configure")
