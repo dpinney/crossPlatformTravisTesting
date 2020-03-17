@@ -13,10 +13,10 @@ if platform.system()=="Darwin": # MacOS
 	os.system('''
 		expect <<'END'
 		spawn sudo bash splat-1.4.2/configure
-		expect "Your choice: "
+		expect "Standard Resolution Mode Configuration"
 		send "2"
-		expect "Your choice: "
+		expect "High Resolution Mode Configuration"
 		send "1"
 		expect eof
-		END
+		'END'
 		''')
