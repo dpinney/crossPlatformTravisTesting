@@ -10,13 +10,5 @@ if platform.system()=="Darwin": # MacOS
 	# SPLAT TEST
 	os.system("wget https://www.qsl.net/kd2bd/splat-1.4.2-osx.tgz")
 	os.system("sudo tar -xvzf splat-1.4.2-osx.tgz")
-	os.system('''
-		expect <<'END'
-		spawn sudo bash splat-1.4.2/configure
-		expect "Standard Resolution Mode Configuration"
-		send "2"
-		expect "High Resolution Mode Configuration"
-		send "1"
-		expect eof
-		'END'
-		''')
+	os.system('''sed -i 's/ans=""/ans="2"/g' splat-1.4.2/configure''')
+	os.system("spawn sudo bash splat-1.4.2/configure")
