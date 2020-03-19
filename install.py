@@ -23,4 +23,5 @@ if platform.system()=="Windows":
 	os.system("choco install -y mingw")
 	os.system("choco install -y cygwin")
 	os.system("choco install -y gnuplot")
-	os.system("gridlabd-4.0_RC1.exe /silent")
+	# os.system("gridlabd-4.0_RC1.exe /silent")
+	os.system("powershell ./gridlabd-4.0_RC1.exe /silent")
