@@ -20,4 +20,4 @@ if platform.system()=="Windows":
 	os.system("choco install -y wget")
 	os.system("wget --no-check-certificate https://sourceforge.net/projects/gridlab-d/files/gridlab-d/Candidate%20release/gridlabd-4.0_RC1.exe")
 	os.system("gridlabd-4.0_RC1.exe /silent")
-	os.system("setx GLPATH 'C:\\Program Files\\GridLAB-D\\bin;C:\\Program Files\\GridLAB-D\\etc;C:\\Program Files\\GridLAB-D\\lib;C:\\Program Files\\GridLAB-D\\samples;C:\\Program Files\\GridLAB-D\\rt;C:\\Program Files\\GridLAB-D\tmy'")
+	os.system("setx GLPATH '/c/Program Files/GridLAB-D/bin:/c/Program Files/GridLAB-D/etc:/c/Program Files/GridLAB-D/lib:/c/Program Files/GridLAB-D/samples:/c/Program Files/GridLAB-D/rt:/c/Program Files/GridLAB-D\tmy'")
