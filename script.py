@@ -3,4 +3,5 @@ import platform, os
 print('TEST SCRIPT RUN')
 
 if platform.system()=="Windows":
-	os.system("gridlabd smsSingle.glm")
+	print('WINDOWS DETECTED')
+	print(os.system("gridlabd smsSingle.glm"))
