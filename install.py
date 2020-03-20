@@ -20,6 +20,7 @@ if platform.system()=="Windows":
 	os.system("choco install -y wget")
 	# os.system("choco install -y vcredist-all")
 	os.system("wget --no-check-certificate https://sourceforge.net/projects/gridlab-d/files/gridlab-d/Candidate%20release/gridlabd-4.0_RC1.exe")
+	# PULL BINARIES!?!?!?!
 	os.system("gridlabd-4.0_RC1.exe/silent")
 	time.sleep(10)
 	# os.system('powershell "./gridlabd-4.0_RC1.exe /silent"')
