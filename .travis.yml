@@ -34,4 +34,5 @@ before_script:
   - if [ "$TRAVIS_OS_NAME" = "windows" ]; then export "GRIDLABD=C:\Program Files\GridLAB-D"; fi
   - echo 'before script'
 script:
-  - python3 script.py
+  - if [ "$TRAVIS_OS_NAME" = "windows" ]; then cmd /c "refreshenv && python3 script.py"; fi
+  - if [ "$TRAVIS_OS_NAME" != "windows" ]; then python3 script.py; fi
