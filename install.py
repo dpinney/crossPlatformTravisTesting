@@ -23,7 +23,7 @@ if platform.system()=="Windows":
 	# PULL BINARIES!?!?!?!
 	os.system("gridlabd-4.0_RC1.exe/silent")
 	time.sleep(10)
-	os.system("refreshenv")
+	# os.system("refreshenv")
 	# os.system('powershell "./gridlabd-4.0_RC1.exe /silent"')
 	# os.system("choco install -y mingw")
 	# os.system("choco install -y cygwin")
