@@ -19,5 +19,6 @@ if platform.system()=="Windows":
 	print('GLPATH', os.getenv('GLPATH'))
 	print(os.listdir('C:\\Program Files\\GridLAB-D\\bin'))
 	print(os.listdir('C:\\Program Files\\GridLAB-D\\lib'))
+	print(os.listdir('C:\\windows\\system32'))
 	safe_call(['gridlabd', '-h'])
 	safe_call(['gridlabd', 'smsSingle.glm'])
