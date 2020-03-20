@@ -30,10 +30,9 @@ install:
   - python3 install.py
 before_script:
   - if [ "$TRAVIS_OS_NAME" = "windows" ]; then export "PATH=/c/Program Files/GridLAB-D/bin:/c/Program files (x86)/Graphviz2.38/bin:/c/Program Files/GridLAB-D/bin/:$PATH"; fi
-  # - if [ "$TRAVIS_OS_NAME" = "windows" ]; then export "GLPATH=C:\Program Files\GridLAB-D\bin;C:\Program Files\GridLAB-D\etc;C:\Program Files\GridLAB-D\lib;C:\Program Files\GridLAB-D\samples;C:\Program Files\GridLAB-D\rt;C:\Program Files\GridLAB-D\tmy"; fi
-  - if [ "$TRAVIS_OS_NAME" = "windows" ]; then export "GLPATH=/c/Program Files\GridLAB-D\bin:/c/Program Files\GridLAB-D\etc:/c/Program Files\GridLAB-D\lib:/c/Program Files\GridLAB-D\samples:/c/Program Files\GridLAB-D\rt:/c/Program Files\GridLAB-D\tmy"; fi
-  # - if [ "$TRAVIS_OS_NAME" = "windows" ]; then export "GRIDLABD=C:\Program Files\GridLAB-D"; fi
-  - if [ "$TRAVIS_OS_NAME" = "windows" ]; then export "GRIDLABD=/c/Program Files/GridLAB-D"; fi
+  - if [ "$TRAVIS_OS_NAME" = "windows" ]; then export "GLPATH=C:\Program Files\GridLAB-D\bin;C:\Program Files\GridLAB-D\etc;C:\Program Files\GridLAB-D\lib;C:\Program Files\GridLAB-D\samples;C:\Program Files\GridLAB-D\rt;C:\Program Files\GridLAB-D\tmy"; fi
+  - if [ "$TRAVIS_OS_NAME" = "windows" ]; then export "GRIDLABD=C:\Program Files\GridLAB-D"; fi
+  - RefreshEnv.cmd
   - echo 'before script'
 script:
   - python3 script.py
