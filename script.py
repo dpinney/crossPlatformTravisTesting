@@ -5,7 +5,7 @@ print('TEST SCRIPT RUN')
 def safe_call(cmdString):
 	try:
 		output = subprocess.check_output(
-			cmdString, stderr=subprocess.PIPE, shell=True,
+			cmdString, stderr=subprocess.STDOUT, shell=True,
 			universal_newlines=True)
 	except subprocess.CalledProcessError as exc:
 		print(str(cmdString) + " Status : FAIL", exc.returncode, exc.output)
@@ -14,6 +14,7 @@ def safe_call(cmdString):
 
 if platform.system()=="Windows":
 	print('WINDOWS DETECTED')
+	safe_call('cmd.exe //c RefreshEnv.cmd')
 	print('PATH', os.getenv('PATH'))
 	print('GLPATH', os.getenv('GLPATH'))
 	print(os.listdir('C:\\Program Files\\GridLAB-D\\bin'))
