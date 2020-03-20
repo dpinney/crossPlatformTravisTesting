@@ -12,6 +12,15 @@ def safe_call(cmdString):
 	else:
 		print(str(cmdString) + " Output: \n{}\n".format(output))
 
+'''
+GRIDLABD FAIL
+-------------
+Use command to get required dlls? They're in there.
+Create a windows server test env on azure. Windows Server, version 1809. Tried on 1909... worked fine. ARGH!!!
+PULL BINARIES!?!?!?! Seems like a longshot since everything's "fine"
+Switch to... github actions????
+'''
+
 if platform.system()=="Windows":
 	print('WINDOWS DETECTED')
 	# safe_call('cmd.exe //c RefreshEnv.cmd') #hangs travis
