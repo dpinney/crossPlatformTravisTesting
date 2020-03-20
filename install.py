@@ -22,7 +22,7 @@ if platform.system()=="Windows":
 	os.system("wget --no-check-certificate https://sourceforge.net/projects/gridlab-d/files/gridlab-d/Candidate%20release/gridlabd-4.0_RC1.exe")
 	# PULL BINARIES!?!?!?!
 	os.system('cmd.exe //c "gridlabd-4.0_RC1.exe/silent"')
-	os.system('cmd.exe //c RefreshEnv.cmd')
+	# os.system('cmd.exe //c RefreshEnv.cmd')
 	# os.system('powershell "./gridlabd-4.0_RC1.exe /silent"')
 	# os.system("choco install -y mingw")
 	# os.system("choco install -y cygwin")
