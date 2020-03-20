@@ -14,7 +14,7 @@ def safe_call(cmdString):
 
 if platform.system()=="Windows":
 	print('WINDOWS DETECTED')
-	safe_call('cmd.exe //c RefreshEnv.cmd')
+	# safe_call('cmd.exe //c RefreshEnv.cmd') #hangs travis
 	print('PATH', os.getenv('PATH'))
 	print('GLPATH', os.getenv('GLPATH'))
 	print(os.listdir('C:\\Program Files\\GridLAB-D\\bin'))
